@@ -19,15 +19,9 @@ function answer() {
         {
                 i--;
         }
-        // for(i=0;i<4;i++)
-        // {
-        //     console.log(num_answer[i]);
-        // }
-    }
-    //console.log(num_answer[0],num_answer[1],num_answer[2],num_answer[3],)
+    }    
     return num_answer;
 }
-
 
 //press btn to present num---variable
 var input_times=0;
@@ -81,8 +75,6 @@ function delete_num() {
         get_num.innerText="*";
         element=document.getElementById("btn"+btnid[input_times])
         element.disabled=false;
-        // console.log(input_times);
-        // console.log(input_num_int[input_times]);
     }
     else
     {
@@ -111,8 +103,7 @@ function check_num(){
         var a=0;
         var b=0; 
         var guess_input="";
-        var guess_ans="";        
-        //console.log(input_num_int[0].toString())    ;
+        var guess_ans=""; 
         for(i=0;i<4;i++)
         {
             guess_input+=input_num_int[i];
@@ -167,9 +158,6 @@ function nums_zero()
     }
     
 }
-
-
-//
 var last_ans="";
 var last_1a2b="";
 function layouttoscreen(guess_input,a1b2)
