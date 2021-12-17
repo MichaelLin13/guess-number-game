@@ -24,7 +24,7 @@ function answer() {
         //     console.log(num_answer[i]);
         // }
     }
-    console.log(num_answer[0],num_answer[1],num_answer[2],num_answer[3],)
+    //console.log(num_answer[0],num_answer[1],num_answer[2],num_answer[3],)
     return num_answer;
 }
 
