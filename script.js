@@ -24,7 +24,7 @@ function answer() {
         //     console.log(num_answer[i]);
         // }
     }
-    //console.log(num_answer[0],num_answer[1],num_answer[2],num_answer[3],)
+    console.log(num_answer[0],num_answer[1],num_answer[2],num_answer[3],)
     return num_answer;
 }
 
@@ -138,6 +138,7 @@ function check_num(){
         layouttoscreen(guess_input,ans_ab);
         open_btn();
         nums_zero()
+        gs_time=gs_time+1;
         count_guess_times(gs_time);
         input_times=0;
         console.log(ans_ab);
@@ -196,8 +197,7 @@ function ab_result(a,b)
 }
 
 function count_guess_times(t)
-{
-    t=t++;
+{    
     var gs=document.getElementById("guess_times");
     gs.innerText=t+"次";
 }
