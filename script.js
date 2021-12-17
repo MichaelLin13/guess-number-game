@@ -197,7 +197,7 @@ function ab_result(a,b)
 
 function count_guess_times(t)
 {
-    t++;
+    t=t++;
     var gs=document.getElementById("guess_times");
     gs.innerText=t+"次";
 }
