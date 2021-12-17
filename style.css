@@ -1,0 +1,69 @@
+/*輸入過的數字*/
+hr{
+    margin-top: 0px;  
+    background-color: black;    
+    inline-size: 5px;
+    height:auto;    
+}
+p{    
+    display: inline;
+}
+.square{
+    color: purple;
+    font-size: 40px;   
+}
+
+#total_space{
+    display: flex;
+    width: 500px;
+    background-color: yellow;
+}
+#history_num{ 
+    width: 250px;       
+    color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: yellow;       
+    margin-top: 0px;   
+    flex: 1;     
+}
+
+#ab_num{
+    margin-top: 0px;
+    border-radius: 10px;
+    border: 2px solid black;       
+    width: 250px;
+    flex: 1;
+}
+
+.input_num{    
+    width: 500px;
+    height: 100px;
+    border: black solid 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h2{
+    font-size: 40px;
+}
+
+table{
+    display: flex;
+    flex-direction: row;
+}
+
+.numbtn{
+    background-color: chocolate;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.newgamebtn{
+    background-color: chocolate;
+    width: 158px;
+    height: 50px;
+    font-size: 25px;
+}

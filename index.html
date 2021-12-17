@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>猜數字~1A2B</title>  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="answer();">
+        <h1>小遊戲~1A2B猜猜看</h1>
+        
+        <div class="input_num">
+            <h2 id="num0">*</h2><h2 id="num1">*</h2><h2 id="num2">*</h2><h2 id="num3">*</h2>
+        </div>
+            <div style="display: flex; flex-direction: row;">
+                <table style="flex: 1;" width="400px" >                        
+                    <div id="total_space">
+                        <div>
+                            <p class="square" id="history_num">已猜過組合</p><p id="guess_times">0次</p> <br/>
+                             <p id="last_answer"></p>                               
+                        </div>
+                        <hr></hr>
+                        <div>
+                            <p class="square" id="ab_num">1A2B</p><br/> 
+                            <p id="last_1a2b"></p>                             
+                        </div>
+                    </div>
+                </table>
+                <div style="flex: 6;">
+                    <button id="btn1" class="numbtn" onclick="present_num(this)">1</button>                    
+                    <button id="btn2" class="numbtn" onclick="present_num(this)">2</button>
+                    <button id="btn3" class="numbtn" onclick="present_num(this)">3</button>
+                    <br/>
+                    <button id="btn4" class="numbtn" onclick="present_num(this)">4</button>
+                    <button id="btn5" class="numbtn" onclick="present_num(this)">5</button>
+                    <button id="btn6" class="numbtn" onclick="present_num(this)">6</button>
+                    <br/>
+                    <button id="btn7" class="numbtn" onclick="present_num(this)">7</button>
+                    <button id="btn8" class="numbtn" onclick="present_num(this)">8</button>
+                    <button id="btn9" class="numbtn" onclick="present_num(this)">9</button>
+                    <br/>
+                    <button id="btnErr" class="numbtn" onclick="delete_num()">Del</button>
+                    <button id="btn0" class="numbtn" onclick="present_num(this)">0</button>
+                    <button id="btnOK" class="numbtn" onclick="check_num()">OK</button>
+                    <br/>
+                    <button id="btnRestart" class="newgamebtn" onclick="restart()">Restart</button>
+                    
+                </div>                
+            </div>
+        
+        <script src="script.js"></script>  
+    </body>
+</html>
