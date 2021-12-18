@@ -10,16 +10,16 @@
         
         <div class="input_num">
             <h2 id="num0">*</h2><h2 id="num1">*</h2><h2 id="num2">*</h2><h2 id="num3">*</h2>
-        </div>
+        </div><br/>
             <div style="display: flex; flex-direction: row;">
                 <table style="flex: 1;" width="400px" >                        
-                    <div id="total_space">
-                        <div>
+                    <div id="total_space" >
+                        <div style="flex: 1;" >
                             <p class="square" id="history_num">已猜過組合</p><p id="guess_times">0次</p> <br/>
                              <p id="last_answer"></p>                               
                         </div>
                         <hr></hr>
-                        <div>
+                        <div style="flex: 1;">
                             <p class="square" id="ab_num">1A2B</p><br/> 
                             <p id="last_1a2b"></p>                             
                         </div>
@@ -38,9 +38,9 @@
                     <button id="btn8" class="numbtn" onclick="present_num(this)">8</button>
                     <button id="btn9" class="numbtn" onclick="present_num(this)">9</button>
                     <br/>
-                    <button id="btnErr" class="numbtn" onclick="delete_num()">Del</button>
+                    <button id="btnErr" class="numbtn" onclick="delete_num()">&#x2190</button>
                     <button id="btn0" class="numbtn" onclick="present_num(this)">0</button>
-                    <button id="btnOK" class="numbtn" onclick="check_num()">OK</button>
+                    <button id="btnOK" class="numbtn" onclick="check_num()">&#9658</button>
                     <br/>
                     <button id="btnRestart" class="newgamebtn" onclick="restart()">Restart</button>
                     

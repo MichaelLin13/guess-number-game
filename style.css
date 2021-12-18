@@ -1,8 +1,9 @@
 /*輸入過的數字*/
 hr{
     margin-top: 0px;  
+    border: 2px solid black;
     background-color: black;    
-    inline-size: 5px;
+    inline-size: 490px;
     height:auto;    
 }
 p{    
@@ -10,11 +11,12 @@ p{
 }
 .square{
     color: purple;
-    font-size: 40px;   
+    font-size: 40px;       
 }
 
 #total_space{
     display: flex;
+    flex-direction: column;
     width: 500px;
     background-color: yellow;
 }
@@ -24,8 +26,24 @@ p{
     border: 2px solid black;
     border-radius: 10px;
     background-color: yellow;       
-    margin-top: 0px;   
+    position: relative; top: 5px;left: 15px; 
     flex: 1;     
+}
+
+#guess_times{
+    color: blue;
+    font-size: 30px;
+    position: relative; top: 5px;left: 25px; 
+}
+
+#last_answer{
+    position: relative; top: 5px;left: 25px; 
+    font-size: 20px;
+}
+
+#last_1a2b{
+    position: relative; top: 5px;left: 25px; 
+    font-size: 20px;
 }
 
 #ab_num{
@@ -33,6 +51,7 @@ p{
     border-radius: 10px;
     border: 2px solid black;       
     width: 250px;
+    position: relative; top: 5px;left: 15px; 
     flex: 1;
 }
 

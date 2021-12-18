@@ -20,6 +20,7 @@ function answer() {
                 i--;
         }
     }    
+    //console.log(num_answer[0],num_answer[1],num_answer[2],num_answer[3]);
     return num_answer;
 }
 
@@ -173,9 +174,17 @@ function ab_result(a,b)
     if(a==4)
     {
         str = a+"A "+b+"B";
-        alert("猜對啦~~");
-        history.go(0);
-        //return str;
+        //alert("猜對啦~~");
+        var confirm_window;
+        confirm_window=confirm("恭喜答對啦! 是否要再來一局呢?")
+        if(confirm_window==true)
+        {
+            history.go(0);
+        }
+        else
+        {
+            return str;   
+        }
     }
     else
     { 
